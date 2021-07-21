@@ -61,7 +61,7 @@ jobs:
 
     - name: Setup node environment
       if: ${{ steps.diff.outputs.count }} > 0
-      uses: actions/setup-node@v2.2.0
+      uses: actions/setup-node@v2.3.0
       with:
         node-version: 14
 

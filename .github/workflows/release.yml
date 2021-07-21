@@ -19,7 +19,7 @@ jobs:
         ref: 'master'
 
     - name: Setup node environment for NPMJS
-      uses: actions/setup-node@v2.2.0
+      uses: actions/setup-node@v2.3.0
       with:
         node-version: 14
         registry-url: 'https://registry.npmjs.org'
@@ -60,7 +60,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: Setup node environment for GitHub Package Registry
-      uses: actions/setup-node@v2.2.0
+      uses: actions/setup-node@v2.3.0
       with:
         node-version: 14
         registry-url: 'https://npm.pkg.github.com'
